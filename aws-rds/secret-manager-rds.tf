@@ -14,6 +14,5 @@ resource "aws_secretsmanager_secret_version" "rds_credentials_version" {
     username = "admin"
     password = random_password.rds.result
     db_name  = "baitersburgercustomer"
-    host     = aws_db_instance.mysql.address
   })
 }
